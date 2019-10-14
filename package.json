@@ -1,0 +1,22 @@
+{
+  "name": "@mhyfritz/vector",
+  "version": "0.0.1",
+  "description": "Euclidean (geometric) vectors with a default immutable API",
+  "main": "dist/@mhyfritz/vector.umd.js",
+  "module": "dist/@mhyfritz/vector.esm.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Markus Hsi-Yang Fritz"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "camelcase": "^5.3.1",
+    "rollup": "^1.23.1",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "typescript": "^3.6.4"
+  }
+}
