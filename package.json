@@ -7,6 +7,7 @@
   "types": "dist/@mhyfritz/index.d.ts",
   "scripts": {
     "build": "rollup -c",
+    "lint": "npx tsc --noEmit",
     "pretest": "npm run build",
     "release": "npx np",
     "test": "jest",
