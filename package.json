@@ -4,8 +4,13 @@
   "description": "Euclidean (geometric) vectors with a default immutable API",
   "main": "dist/@mhyfritz/vector.umd.js",
   "module": "dist/@mhyfritz/vector.esm.js",
+  "types": "dist/@mhyfritz/index.d.ts",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "release": "npx np",
+    "test": "jest",
+    "version": "npm run build"
   },
   "keywords": [],
   "author": {
@@ -14,6 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "camelcase": "^5.3.1",
+    "jest": "^24.9.0",
     "rollup": "^1.23.1",
     "rollup-plugin-terser": "^5.1.2",
     "rollup-plugin-typescript2": "^0.24.3",

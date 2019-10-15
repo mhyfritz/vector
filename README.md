@@ -1,5 +1,5 @@
 # vector
 
-| Euclidean (geometric) vectors with a default immutable API
+> Euclidean (geometric) vectors with a default immutable API
 
-## _WIP_
+_WIP_
