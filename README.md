@@ -251,9 +251,9 @@ Angle has to be specified in _radians_.
 
 ```javascript
 const a = Vector2d.fromAngle(2);
-Vector2d { x: -0.4161468365471424, y: 0.9092974268256817 }
+// Vector2d { x: -0.4161468365471424, y: 0.9092974268256817 }
 a.mag(); // 1
-const b = Vector2d.fromAngle(2, 5)
+const b = Vector2d.fromAngle(2, 5);
 // Vector2d { x: -2.080734182735712, y: 4.546487134128409 }
 b.mag(); // 5
 ```
@@ -268,6 +268,11 @@ const b = new Vector2d(32, 128);
 
 const c = a.add(b).div(10);
 // `c` is `Vector2d { x: 3.4, y: 13.6 }`
+// `a` is `Vector2d { x: 2, y: 8 }`
+
+// to avoid unnecessary copies, we can also mix and match
+const d = a.add(b).$div(10);
+// `d` is `Vector2d { x: 3.4, y: 13.6 }`
 // `a` is `Vector2d { x: 2, y: 8 }`
 
 a.$add(b).$div(10);
