@@ -56,7 +56,7 @@ Clones a vector.
 
 ```javascript
 const a = new Vector2d(2, 8);
-const b = v.clone();
+const b = a.clone();
 // `b` is `Vector2d { x: 2, y: 8 }`
 ```
 
@@ -108,7 +108,7 @@ a.$sub(b);
 
 ### `.mult(<number>)`
 
-Performs scalar vector multiplication without mutating the caller.
+Performs scalar multiplication without mutating the caller.
 
 ```javascript
 const a = new Vector2d(2, 8);
@@ -119,7 +119,7 @@ const b = a.mult(2);
 
 ### `.$mult(<number>)`
 
-Performs scalar vector multiplication and mutates the caller.
+Performs scalar multiplication and mutates the caller.
 
 ```javascript
 const a = new Vector2d(2, 8);
@@ -129,7 +129,7 @@ a.$mult(2);
 
 ### `.div(<number>)`
 
-Performs scalar vector division without mutating the caller.
+Performs scalar division without mutating the caller.
 
 ```javascript
 const a = new Vector2d(2, 8);
@@ -140,7 +140,7 @@ const b = a.div(2);
 
 ### `.$div(<number>)`
 
-Performs scalar vector division and mutates the caller.
+Performs scalar division and mutates the caller.
 
 ```javascript
 const a = new Vector2d(2, 8);
@@ -150,7 +150,7 @@ a.$div(2);
 
 ### `.mag()`
 
-Gets the magnitude (length) of a vector.
+Returns the magnitude (length) of a vector.
 
 ```javascript
 const a = new Vector2d(2, 8);
@@ -243,11 +243,11 @@ b.mag(); // 1
 
 ### `fromAngle(angle: number, length?: number)`
 
-Creates a vector from a given angle and length. If no length is
-specified, a unit vector (length 1) will be produced. Angle has
-to be specified in _radians_.
+_(credits: p5.js)_
 
-_credits: p5.js_
+Static class method that creates a vector from a given angle and length.
+If no length is specified, a unit vector (length 1) will be produced.
+Angle has to be specified in _radians_.
 
 ```javascript
 const a = Vector2d.fromAngle(2);
