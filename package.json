@@ -5,6 +5,8 @@
   "main": "dist/@mhyfritz/vector.umd.js",
   "module": "dist/@mhyfritz/vector.esm.js",
   "types": "dist/@mhyfritz/index.d.ts",
+  "unpkg": "dist/@mhyfritz/vector.umd.min.js",
+  "jsdelivr": "dist/@mhyfritz/vector.umd.min.js",
   "scripts": {
     "build": "rollup -c",
     "lint": "npx tsc --noEmit",
@@ -13,7 +15,11 @@
     "test": "jest",
     "version": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "geometry",
+    "spatial",
+    "vector"
+  ],
   "author": {
     "name": "Markus Hsi-Yang Fritz",
     "email": "markus.h.y.fritz@gmail.com"
