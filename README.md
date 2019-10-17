@@ -1,7 +1,5 @@
 [![GitHub Actions status | mhyfritz/vector](https://github.com/mhyfritz/vector/workflows/Unit%20tests/badge.svg)](https://github.com/mhyfritz/vector/actions?workflow=Unit+tests)
 
-_WIP_
-
 # vector
 
 Euclidean (geometric) vectors with an immutable and mutable API.
@@ -28,11 +26,17 @@ import { Vector2d } from "@mhyfritz/vector";
 Browser:
 
 ```html
-<!-- unpkg -->
+<!-- import from unpkg -->
 <script src="https://unpkg.com/@mhyfritz/vector"></script>
 
-<!-- jsdelivr -->
+<!-- import from jsdelivr -->
 <script src="https://cdn.jsdelivr.net/npm/@mhyfritz/vector"></script>
+
+<!-- usage; module is globally registered as `mhyfritzVector` -->
+<script>
+  const { Vector2d } = mhyfritzVector;
+  new Vector2d(2, 8);
+</script>
 ```
 
 ## API
