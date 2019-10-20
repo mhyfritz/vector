@@ -97,7 +97,7 @@ export class Vector2d {
   }
 
   direction(): Number {
-    return Math.atan(this.y / this.x);
+    return Math.atan2(this.y, this.x);
   }
 
   distance(vec: Vector2d): Number {
