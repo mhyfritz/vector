@@ -185,6 +185,13 @@ test("[direction] returns a vector's direction / angle", () => {
   expect(w.direction()).toBeCloseTo(1.3258176636680326);
 });
 
+test("[distance] returns the Euclidean distance to another vector", () => {
+  const v = new Vector2d(2, 8);
+  const w = new Vector2d(32, 128);
+  expect(v.distance(w)).toBeCloseTo(123.69316876852982);
+  expect(v.distance(w)).toBeCloseTo(v.sub(w).mag());
+});
+
 test("[Vector2d.random] returns a unit vector", () => {
   expect(Vector2d.random().mag()).toBeCloseTo(1);
   expect(Vector2d.random().mag()).toBeCloseTo(1);

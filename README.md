@@ -244,6 +244,16 @@ b.direction(); // 0.78... radians
 (b.direction() / Math.PI) * 180; // 45 degrees
 ```
 
+### `.distance(<Vector2d>)`
+
+Computes the Euclidean distance to another vector.
+
+```javascript
+const v = new Vector2d(2, 8);
+const w = new Vector2d(32, 128);
+v.distance(w); // 123.69...
+```
+
 ### `random()`
 
 Static class method that returns a random unit vector.

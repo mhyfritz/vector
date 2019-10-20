@@ -100,6 +100,10 @@ export class Vector2d {
     return Math.atan(this.y / this.x);
   }
 
+  distance(vec: Vector2d): Number {
+    return Math.sqrt((vec.x - this.x) ** 2 + (vec.y - this.y) ** 2);
+  }
+
   /* credits: p5.js */
   static fromAngle(angle: number, length = 1): Vector2d {
     return new Vector2d(length * Math.cos(angle), length * Math.sin(angle));
