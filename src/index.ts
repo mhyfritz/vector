@@ -96,6 +96,10 @@ export class Vector2d {
     return this;
   }
 
+  direction(): Number {
+    return Math.atan(this.y / this.x);
+  }
+
   /* credits: p5.js */
   static fromAngle(angle: number, length = 1): Vector2d {
     return new Vector2d(length * Math.cos(angle), length * Math.sin(angle));

@@ -232,6 +232,18 @@ a.$limit(5);
 a.mag(); // 5
 ```
 
+### `.direction()`
+
+Computes a vector's direction / angle in _radians_.
+
+```javascript
+const a = new Vector2d(2, 0);
+a.direction(); // 0
+const b = new Vector2d(2, 2);
+b.direction(); // 0.78... radians
+(b.direction() / Math.PI) * 180; // 45 degrees
+```
+
 ### `random()`
 
 Static class method that returns a random unit vector.

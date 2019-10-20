@@ -178,6 +178,13 @@ test("[$limit] is mutable", () => {
   expect(v.y).toBeCloseTo(4.85071250072666);
 });
 
+test("[direction] returns a vector's direction / angle", () => {
+  const v = new Vector2d(2, 8);
+  const w = new Vector2d(32, 128);
+  expect(v.direction()).toBeCloseTo(1.3258176636680326);
+  expect(w.direction()).toBeCloseTo(1.3258176636680326);
+});
+
 test("[Vector2d.random] returns a unit vector", () => {
   expect(Vector2d.random().mag()).toBeCloseTo(1);
   expect(Vector2d.random().mag()).toBeCloseTo(1);
