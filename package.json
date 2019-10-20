@@ -1,6 +1,6 @@
 {
   "name": "@mhyfritz/vector",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Euclidean (geometric) vectors with a default immutable API",
   "main": "dist/@mhyfritz/vector.umd.js",
   "module": "dist/@mhyfritz/vector.esm.js",
