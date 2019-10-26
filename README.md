@@ -13,7 +13,7 @@ npm install @mhyfritz/vector
 
 ## Usage
 
-Node:
+Node / module bundlers:
 
 ```javascript
 const { Vector2d } = require("@mhyfritz/vector");
